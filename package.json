@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:dev": "webpack-dev-server src/index.js --inline --hot --colors --content-base dist/",
+    "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/RATATATO/webes/issues"
   },
-  "homepage": "https://github.com/RATATATO/webes#readme"
+  "homepage": "https://github.com/RATATATO/webes#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.18.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
 }
